@@ -8,4 +8,5 @@ $('*[rating] > i').click(function(e){
    for(var x = 0;x<targetNum;x++){
       $('*[rating] > i:nth-child('+x+')').html("star");
    }
+   $('[rating]').attr('val', targetNum-1);
 });
