@@ -1,5 +1,5 @@
 $("*[rating] > i").click(function(e) {
-  var numChild = $("*[rating] i").length + 1,
+  let numChild = $("*[rating] i").length + 1,
     target = $(e.target),
     targetNum = $(target).index(target.this) + 2;
   for (var x = 0; x < numChild; x++)
